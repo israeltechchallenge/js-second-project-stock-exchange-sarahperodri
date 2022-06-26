@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The best solution for you!</title>
+<link rel="stylesheet" href="style.css">
+</link>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="searchContainer">
+            <div class="subDiv">
+                <input class="input" id="input" placeholder="search the company"></input>
+                <button type="button" class="button" onclick="this.classList.toggle('button--loading')" id="submit">
+                    <span class="button__text">Search</span>
+                </button>
+                <div class="resultBox" id="responseField"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module" ></script>
+    <script src="script2.js" type="module" ></script>
+    <script>
+        const btn = document.querySelector(".button");
+        btn.classList.add("button--loading");
+        btn.classList.remove("button--loading");
+    </script>
+</body>
+
+</html>
